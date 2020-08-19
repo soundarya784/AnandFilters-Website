@@ -187,6 +187,9 @@ h1 {
 .cb {
     height: 78px;
 }
+.cb1{
+    height: 170px;
+}
 
 
 
@@ -270,8 +273,9 @@ h4 {
 /*About*/
 .aboutbg {
     background-color: white;
+   
     margin: 5%;
-    margin-top:0% ;
+     margin-top:0%;
     padding: 4%;
     box-shadow: 0px 5px 8px 8px rgba(32, 32, 32, 0.692);
     display: inline-block;
@@ -465,7 +469,7 @@ a:hover {
 
 
     }
-
+  
 
 
     /*second carousel*/
@@ -523,6 +527,9 @@ a:hover {
         height: 20rem;
         margin-top: 7%;
 
+    }
+    .card1{
+        height: 23rem;
     }
 
     #sec-title,
