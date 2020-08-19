@@ -18,6 +18,28 @@ $(document).ready(function () {
       delay: (el, i) => 140 * (i + 1)
     });*/
 
+    var textWrapper = document.querySelector('.ml12');
+textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter1'>$&</span>");
+
+    anime.timeline({loop: true})
+    .add({
+      targets: '.ml12 .letter1',
+      translateX: [40,0],
+      translateZ: 0,
+      opacity: [0,1],
+      easing: "easeOutExpo",
+      duration: 1200,
+      delay: (el, i) => 900 + 30 * i
+    }).add({
+      targets: '.ml12 .letter1',
+      translateX: [0,-30],
+      opacity: [1,0],
+      easing: "easeInExpo",
+      duration: 1100,
+      delay: (el, i) => 1200 + 30 * i
+    });
+
+
   anime.timeline({
       loop: true
     })
